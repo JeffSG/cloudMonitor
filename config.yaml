@@ -1,0 +1,5 @@
+comPort: COM1
+sampleSecond: 60
+centerWeight: 0.5
+detectRange: 10.0
+dataServer: dataSvr
