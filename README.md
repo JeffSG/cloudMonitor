@@ -13,6 +13,11 @@ CloudMonitorGo is an application to monitor the cloud coverage of the night sky.
 3. Flex and robust algorithm to nspect the cloud coverage.
 4. Communication with the Weather server
 
+### Syntax
+```
+go run .\mainProc.go -config config.yaml -reference reference.txt
+```
+
 ### Modules
 1. main @cloudMonitor/mainProc.go - the main process.
 2. config @cloudMonitor/package/config/config.go - load and manage the configuration items.
@@ -46,4 +51,3 @@ Tested with Virtual Serial Port Driver V6.9
 | 2 | Turn off the LED | $SETP=9,0\r\n | OK\r\n | Yes | Must turn off the LED before the normal process |
 | 3 | Capture one frame | $SETP=7,1\r\n | OK - 4 bytes, MLX_TMP - 9 bytes, then data segment | No | Data frames are received continuously, starting with MLX_TMP |
 | 4 | Stop capture | $SETP=7,0\r\n | OK\r\n | No | The same command as 1, but in data processing stage |
-
